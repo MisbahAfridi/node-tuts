@@ -25,6 +25,9 @@
   "homepage": "https://github.com/MisbahAfridi/node-tuts#readme",
   "dependencies": {
     "colors": "^1.4.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.1",
     "simple-node-logger": "^21.8.12"
   }
 }

@@ -1,3 +1,16 @@
-const colors = require('colors');
-console.log("package.json".red);
-console.warn(10+20);
+
+const dbConnection = require('./mongodb');
+
+// dbConnection().then((resp) => {
+//     resp.find().toArray().then((data) => {
+//         console.log(data);
+//     })
+// });
+
+const main = async () => {
+    let data = await dbConnection();
+    data = await data.find().toArray();
+    console.warn(data);
+
+}
+main();
